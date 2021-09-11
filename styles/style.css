@@ -22,23 +22,25 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    background-color: #f2f2f2;
 }
 
-.header__logo {
+.logo {
     width: 183px;
     height: 32px;
 }
-
-.header__logo img {
+.logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.header__logo_position {
+.logo__place {
     position: absolute;
     top: 30px;
     left: 64px;
+}
+.logo__place_footer {
+    position: relative;
 }
 
 .header__title {
@@ -182,8 +184,8 @@ body {
     margin-bottom: 60px;
 }
 
-.table-row:last-child {
-    margin-bottom: 100px;
+.digits .table-row:last-child {
+    margin-bottom: 0px;
 }
 
 .table-cell {
@@ -209,11 +211,13 @@ body {
 
 
 .feynman {
-    min-height: 890px;
+    padding-top: 100px;
+    min-height: 790px;
     background-image: url('../images/feynman.png');
     background-position: left bottom;
     background-repeat: no-repeat;
     position: relative;
+    background-color: #f2f2f2;
 }
 
 .feynman__title {
@@ -222,7 +226,6 @@ body {
     margin: auto auto 70px auto;
     line-height: 1.15;
     font-size: 120px;
-    margin-top: 100px;
 }
 
 .feynman__subtitle,
@@ -275,6 +278,72 @@ body {
     z-index: 0;
     width: 877px;
     height: 877px;
+}
+
+.footer {
+    display: flex;
+    min-height: 350px;
+}
+
+.footer__columns {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0 40px 0;
+
+}
+.footer__column {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 711px;
+}
+
+.footer__column-heading,
+.footer__column-links {
+    line-height: 30px;
+    font-size: 18px;
+}
+    .footer__column-links {
+        display: inline-flex;
+        align-items: center;
+        color:  #fff;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-weight: 100;
+    }
+    .footer__column-links:last-child {
+        margin-bottom: 16px;
+    }
+    .footer__column-heading {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+.footer__column-content-copyright {
+    display: flex;
+    flex-direction: column;
+}
+.footer__author {
+    line-height: 25px;
+    font-size: 18px;
+    margin: auto 0 0 0;
+}
+.footer__column-content-info,
+.footer__column-content-social,
+.footer__column-link {
+    display:flex;
+    flex-direction: column;
+}
+
+.footer__social-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.footer__column-content-info,
+.footer__column-content-social {
+    align-items: flex-end;
 }
 
 
