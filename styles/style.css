@@ -169,12 +169,18 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     font-weight: bold;
     margin-bottom: 20px;
 }
+.section-title_theme_dark {
+    color: #fff;
+}
 
 .section-subtitle {
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
     margin-bottom: 60px;
+}
+.section-subtitle_theme_dark {
+    color: #fff;
 }
 
 .table {
@@ -184,6 +190,9 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     flex-direction: column;
     /* justify-content: space-between; */
     flex-basis: 250px;
+}
+.table_theme_dark {
+    color: #fff;
 }
 
 .table-row {
@@ -255,16 +264,14 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     right: 48px;
 }
 
-.theme_dark {
-    color: #fff;
-    background-color: #000;
-}
-
 
 .kaufman {
     position: relative;
     overflow: hidden;
     padding: 90px 0;
+}
+.kaufman_theme_dark {
+    background-color: #000;
 }
 
 .kaufman .table {
