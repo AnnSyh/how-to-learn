@@ -1,7 +1,8 @@
 body {
-    font-family:'Helvetica Neue', 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
     font-size: 16px;
 }
+
 .page {
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
@@ -27,6 +28,7 @@ body {
     width: 183px;
     height: 32px;
 }
+
 .header__logo img {
     width: 100%;
     height: 100%;
@@ -59,7 +61,7 @@ body {
 }
 
 .header__link {
-    color:#4a8fed;
+    color: #2f80ed;
     text-decoration: none;
 }
 
@@ -87,12 +89,6 @@ body {
     z-index: -1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-    height: 568px;
-    width: 568px;
-}
-
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
     width: 200px;
@@ -100,3 +96,185 @@ body {
     margin-right: 0;
     margin-top: 80px;
 }
+
+.description {
+    max-width: 1200px;
+    margin: 100px auto 0 auto;
+}
+
+.description__two-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description__two-columns_col-1:first-child {
+    min-width: 175px;
+}
+
+.description__two-columns_col-2:last-child {
+    width: 80%;
+    min-width: 784px;
+}
+
+.description p {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.description p:last-child {
+    margin-bottom: 0;
+}
+
+.description .paragraph {
+    font-size: 24px;
+    line-height: 34px;
+
+}
+
+.description__brief {
+    color: #2f80ed;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.description .span-accent {
+    font-weight: 600;
+}
+
+.digits {
+    margin: 100px auto;
+}
+
+.section-title,
+.section-subtitle {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.section-title {
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+.table {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    flex-basis: 250px;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.table-row:last-child {
+    margin-bottom: 100px;
+}
+
+.table-cell {
+    width: 250px;
+}
+
+.table-heading {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.table-text {
+    line-height: 1.2;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.table-text:last-child {
+    margin-bottom: 0;
+}
+
+
+.feynman {
+    min-height: 890px;
+    background-image: url('../images/feynman.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.feynman__title {
+    max-width: 648px;
+    text-align: center;
+    margin: auto auto 70px auto;
+    line-height: 1.15;
+    font-size: 120px;
+    margin-top: 100px;
+}
+
+.feynman__subtitle,
+.feynman__link {
+    line-height: 51px;
+    font-size: 36px;
+}
+
+.feynman__subtitle {
+    text-align: center;
+    margin: auto auto 70px auto;
+}
+
+.feynman__link {
+    text-decoration: none;
+    color: #2f80ed;
+    position: absolute;
+    top: 50%;
+    right: 48px;
+}
+
+.theme_dark {
+    color: #fff;
+    background-color:#000;
+}
+
+
+.kaufman {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0;
+}
+.kaufman .table {
+    position: relative;
+    z-index: 1;
+}
+.kaufman .table-row {
+    margin-bottom: 80px;
+}
+.kaufman .table-row:last-child {
+    margin-bottom: 0px;
+}
+.kaufman .section-subtitle {
+    margin-bottom: 80px;
+}
+.kaufman__triangle {
+    position:absolute;
+    right: -210px;
+    top:0;
+    z-index: 0;
+    width: 877px;
+    height: 877px;
+}
+
+
