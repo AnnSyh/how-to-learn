@@ -14,6 +14,11 @@ body {
 
 }
 
+h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
+    padding: 0;
+    margin:0;
+}
+
 .header {
     height: 100vh;
     min-height: 600px;
@@ -29,16 +34,19 @@ body {
     width: 183px;
     height: 32px;
 }
+
 .logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .logo__place {
     position: absolute;
     top: 30px;
     left: 64px;
 }
+
 .logo__place_footer {
     position: relative;
 }
@@ -249,7 +257,7 @@ body {
 
 .theme_dark {
     color: #fff;
-    background-color:#000;
+    background-color: #000;
 }
 
 
@@ -258,23 +266,28 @@ body {
     overflow: hidden;
     padding: 90px 0;
 }
+
 .kaufman .table {
     position: relative;
     z-index: 1;
 }
+
 .kaufman .table-row {
     margin-bottom: 80px;
 }
+
 .kaufman .table-row:last-child {
     margin-bottom: 0px;
 }
+
 .kaufman .section-subtitle {
     margin-bottom: 80px;
 }
+
 .kaufman__triangle {
-    position:absolute;
+    position: absolute;
     right: -210px;
-    top:0;
+    top: 0;
     z-index: 0;
     width: 877px;
     height: 877px;
@@ -293,6 +306,7 @@ body {
     padding: 60px 0 40px 0;
 
 }
+
 .footer__column {
     display: flex;
     justify-content: space-between;
@@ -304,34 +318,40 @@ body {
     line-height: 30px;
     font-size: 18px;
 }
-    .footer__column-links {
-        display: inline-flex;
-        align-items: center;
-        color:  #fff;
-        text-decoration: none;
-        margin-bottom: 10px;
-        font-weight: 100;
-    }
-    .footer__column-links:last-child {
-        margin-bottom: 16px;
-    }
-    .footer__column-heading {
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
+
+.footer__column-links {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.footer__column-links:last-child {
+    margin-bottom: 16px;
+}
+
+.footer__column-heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 .footer__column-content-copyright {
     display: flex;
     flex-direction: column;
 }
+
 .footer__author {
     line-height: 25px;
     font-size: 18px;
     margin: auto 0 0 0;
 }
+
 .footer__column-content-info,
 .footer__column-content-social,
 .footer__column-link {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -345,5 +365,3 @@ body {
 .footer__column-content-social {
     align-items: flex-end;
 }
-
-
