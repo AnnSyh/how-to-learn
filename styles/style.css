@@ -108,16 +108,16 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     margin: 100px auto 0 auto;
 }
 
-.description__two-columns {
+.two-columns {
     display: flex;
     justify-content: space-between;
 }
 
-.description__two-columns_col-1:first-child {
+.two-columns__col:first-child {
     min-width: 175px;
 }
 
-.description__two-columns_col-2:last-child {
+.two-columns__col:last-child {
     width: 80%;
     min-width: 784px;
 }
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     line-height: 1.2;
 }
 
-.description .span-accent {
+.span-accent {
     font-weight: 600;
 }
 
