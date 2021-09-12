@@ -41,13 +41,13 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     object-fit: cover;
 }
 
-.logo__place {
+.logo_place_header {
     position: absolute;
     top: 30px;
     left: 64px;
 }
 
-.logo__place_footer {
+.logo_place_footer {
     position: relative;
 }
 
@@ -57,12 +57,13 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     line-height: 96px;
     margin-left: 64px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header__subtitle {
     max-width: 388px;
     position: absolute;
+    z-index: 2;
     bottom: 30px;
     left: 64px;
     font-size: 18px;
@@ -79,6 +80,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     width: 765px;
     height: 608px;
     position: absolute;
+    z-index: 1;
     bottom: 0;
     right: 0;
 }
@@ -96,16 +98,10 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
-}
+
 
 .description {
     max-width: 1200px;
@@ -181,6 +177,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
 }
 .section-subtitle_theme_dark {
     color: #fff;
+    margin-bottom: 0;
 }
 
 .table {
@@ -188,42 +185,47 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     flex-basis: 250px;
 }
-.table_theme_dark {
-    color: #fff;
-}
-
-.table-row {
+.table__row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
 }
-
-.digits .table-row:last-child {
+.table__row:last-child {
     margin-bottom: 0px;
 }
-
-.table-cell {
+.table__cell {
     width: 250px;
 }
-
-.table-heading {
+.table__heading {
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
 }
-
-.table-text {
+.table__text {
     line-height: 1.2;
     font-size: 18px;
     margin-bottom: 20px;
 }
-
-.table-text:last-child {
+.table__text:last-child {
     margin-bottom: 0;
+}
+
+.table_theme_dark {
+    position: relative;
+    z-index: 1;
+}
+.table_cell_theme_dark {
+    width: 200px;
+    margin-top: 80px;
+}
+.table_heading_theme_dark {
+    color: white;
+}
+.table_text_theme_dark {
+    color: white;
 }
 
 
@@ -236,7 +238,6 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     position: relative;
     background-color: #f2f2f2;
 }
-
 .feynman__title {
     max-width: 648px;
     text-align: center;
@@ -244,18 +245,15 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
     line-height: 1.15;
     font-size: 120px;
 }
-
 .feynman__subtitle,
 .feynman__link {
     line-height: 51px;
     font-size: 36px;
 }
-
 .feynman__subtitle {
     text-align: center;
     margin: auto auto 70px auto;
 }
-
 .feynman__link {
     text-decoration: none;
     color: #2f80ed;
@@ -273,24 +271,6 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
 .kaufman_theme_dark {
     background-color: #000;
 }
-
-.kaufman .table {
-    position: relative;
-    z-index: 1;
-}
-
-.kaufman .table-row {
-    margin-bottom: 80px;
-}
-
-.kaufman .table-row:last-child {
-    margin-bottom: 0px;
-}
-
-.kaufman .section-subtitle {
-    margin-bottom: 80px;
-}
-
 .kaufman__triangle {
     position: absolute;
     right: -210px;
@@ -303,6 +283,8 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, ol li, ul li {
 .footer {
     display: flex;
     min-height: 350px;
+    background-color:#000;
+    color: #fff;
 }
 
 .footer__columns {
