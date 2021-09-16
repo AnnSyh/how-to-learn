@@ -109,13 +109,16 @@
     margin-top: 0;
     margin-bottom: 30px;
 }
+.two-columns__paragraph:last-child {
+    margin-bottom: 0;
+}
 
 .two-columns__span-accent {
     font-weight: 600;
 }
 
 .digits {
-    margin: 70px auto 40px auto;
+    margin: 100px auto 40px auto;
 }
 
 .section-title,
@@ -139,14 +142,14 @@
     margin-bottom: 60px;
 }
 
-.section-title_kaufman,
-.section-subtitle_kaufman {
+.section-title_theme_dark,
+.section-subtitle_theme_dark {
     z-index: 1;
     position: relative;
     color: #fff;
 }
 
-.section-subtitle_kaufman {
+.section-subtitle_theme_dark {
     margin-bottom: 0;
 }
 
@@ -154,6 +157,7 @@
     width: 1100px;
     margin: auto;
     display: flex;
+    justify-content: center;
     flex-basis: 250px;
     flex-wrap: wrap;
 }
@@ -226,12 +230,12 @@
 .feynman__link {
     line-height: 51px;
     font-size: 36px;
-    font-weight: normal;
 }
 
 .feynman__subtitle {
     text-align: center;
     margin: auto;
+    font-weight: normal;
 }
 
 .feynman__link {
