@@ -1,0 +1,14 @@
+.transparency {
+    /* animation: show 2s infinite linear; */
+    animation: show .2s  linear;
+}
+
+@keyframes show {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}

@@ -2,8 +2,7 @@
     width: 620px;
     height: 608px;
     margin-right: 48px;
-
-    line-height: 42px;
-    font-size: 30px;
-    font-weight: normal;
+    background-image: url(../../../images/khan-book.jpg);
+    background-size: cover;
+    background-position: 0 0;
 }

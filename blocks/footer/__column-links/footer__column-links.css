@@ -1,13 +1,12 @@
 .footer__column-links {
     line-height: 30px;
     font-size: 18px;
-
     display: inline-flex;
     align-items: center;
     color: #fff;
     text-decoration: none;
     /* margin-bottom: 10px; */
-    font-weight: 100;
+    font-weight: 400;
 }
 .footer__column-links:last-child {
     margin-bottom: 16px;
