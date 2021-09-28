@@ -1,6 +1,5 @@
-.transparency {
-    /* animation: show 2s infinite linear; */
-    animation: show .2s  linear;
+.transparency:hover {
+    animation: show .2s  forwards;
 }
 
 @keyframes show {
