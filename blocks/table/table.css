@@ -5,4 +5,6 @@
     justify-content: center;
     flex-basis: 250px;
     flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
 }
