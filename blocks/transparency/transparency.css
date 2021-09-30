@@ -1,13 +1,7 @@
-.transparency:hover {
-    animation: show .2s  forwards;
+.transparency {
+    transition: opacity 0.2s 0.02s ease;
 }
 
-@keyframes show {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0.5;
-    }
+.transparency:hover {
+    opacity: 0.5;
 }

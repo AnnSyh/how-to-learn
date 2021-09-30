@@ -1,6 +1,5 @@
 .video__iframes {
-    max-width: 920px;
-    height: 316px;
+    max-width: 1050px;
     display: flex;
     justify-content: space-between;
     position: relative;
