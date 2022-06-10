@@ -18,5 +18,5 @@ Frame
 
 
 ##### Просмотр:
-https://annsyh.github.io/......../
+https://annsyh.github.io/how-to-learn/
 
